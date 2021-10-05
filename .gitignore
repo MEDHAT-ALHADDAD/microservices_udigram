@@ -1,0 +1,7 @@
+set_env.sh
+.history
+./udagram-api/node_modules
+./udagram-frontend/node_modules
+udagram-frontend/7.19
+.vscode/settings.json
+udagram-api/7.19
