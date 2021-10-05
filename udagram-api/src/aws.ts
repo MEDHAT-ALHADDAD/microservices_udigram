@@ -5,7 +5,6 @@ import { config } from "./config/config";
 const credentials = new AWS.SharedIniFileCredentials({
   profile: config.aws_profile,
 });
-console.log(credentials);
 AWS.config.credentials = credentials;
 
 export const s3 = new AWS.S3({
@@ -13,7 +12,6 @@ export const s3 = new AWS.S3({
   region: config.aws_region,
   params: { Bucket: config.aws_media_bucket },
 });
-console.log(s3);
 // Generates an AWS signed URL for retrieving objects
 export function getGetSignedUrl(key: string): string {
   const signedUrlExpireSeconds = 60 * 5;
