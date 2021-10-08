@@ -6,3 +6,6 @@ udagram-frontend/7.19
 .vscode/settings.json
 udagram-api/7.19
 udagram-api-feed/7.19
+1aws-secret.yaml
+1env-configmap.yaml
+1env-secret.yaml
